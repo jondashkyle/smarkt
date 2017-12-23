@@ -1,5 +1,5 @@
 {
-  "name": "smark",
+  "name": "smarkt",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jondashkyle/smark.git"
+    "url": "git+https://github.com/jondashkyle/smarkt.git"
   },
   "keywords": [
     "markdown",
@@ -19,9 +19,9 @@
   "author": "Jon-Kyle <contact@jon-kyle.com> (http://jon-kyle.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jondashkyle/smark/issues"
+    "url": "https://github.com/jondashkyle/smarkt/issues"
   },
-  "homepage": "https://github.com/jondashkyle/smark#readme",
+  "homepage": "https://github.com/jondashkyle/smarkt#readme",
   "standard": {
     "ignore": [
       "postcss.js"
