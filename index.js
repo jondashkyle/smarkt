@@ -1,4 +1,4 @@
 module.exports = {
-  stringify: require('./lib/write'),
-  parse: require('./lib/read')
+  stringify: require('./lib/stringify'),
+  parse: require('./lib/parse')
 }

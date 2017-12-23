@@ -101,20 +101,20 @@ We won the **battle** and lost the *war*. What Debord called détournement becam
 
 ### `stringify`
 
-Accepts a single argument which must be type `string`.
+Accepts a single argument which must be type `string`. Returns an `object`.
 
 ### `parse`
 
-Accepts a single argument which must be type `object`.
+Accepts a single argument which must be type `object`. Returns a `string`.
 
 ## Alternate usage
 
-### Direct access
-
-```js
-var read = require('smarkt/read')
-var write = require('smarkt/write')
 ```
+var stringify = require('smarkt/stringify')
+var parse = require('smarkt/parse')
+```
+
+Sometimes it’s handy just to access a single method to reduce bundle size. To do this, simple require the desired method name.
 
 ## Todo
 
