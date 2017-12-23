@@ -28,7 +28,7 @@ var obj = smarkt.stringify({
 
 ## Structure
 
-A plain-text file is separated into fields delineated by four dashes.
+A plain-text file is separated into fields delineated by four dashes. Feature parity with Kirby’s [file structure](https://getkirby.com/docs/content/adding-content).
 
 ```
 ----
