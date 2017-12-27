@@ -1,6 +1,6 @@
 <h1 align="center">📃 smarkt</h1>
 
-<div align="center">Hyper-readable plain text structure for defining fields and values</div>
+<div align="center">Hyper-readable structure for defining fields and values in plain text</div>
 
 ## Usage
 
