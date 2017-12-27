@@ -1,7 +1,7 @@
 {
   "name": "smarkt",
   "version": "0.0.1",
-  "description": "",
+  "description": "Hyper-readable plain text format",
   "main": "index.js",
   "scripts": {
     "test": "standard --fix && node test.js | colortape"
@@ -22,11 +22,6 @@
     "url": "https://github.com/jondashkyle/smarkt/issues"
   },
   "homepage": "https://github.com/jondashkyle/smarkt#readme",
-  "standard": {
-    "ignore": [
-      "postcss.js"
-    ]
-  },
   "dependencies": {
     "js-yaml": "^3.10.0",
     "object-keys": "^1.0.11",

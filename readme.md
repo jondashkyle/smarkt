@@ -1,10 +1,10 @@
 <h1 align="center">📃 smarkt</h1>
 
-<div align="center">Hyper-readable plain text format built above yaml ad markdown</div>
+<div align="center">Hyper-readable plain text structure for defining fields and values</div>
 
 ## Usage
 
-Transform some structured plain text, including markdown and yaml, into JSON, and visa versa. Super useful for archivability and readability.
+Transform some structured plain text including Markdown and YAML into JSON, and visa versa. Super useful for archivability and readability.
 
 ```js
 var smarkt = require('smarkt')
