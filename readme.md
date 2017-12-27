@@ -4,7 +4,7 @@
 
 ## Usage
 
-Transform some structured plain text including Markdown and YAML into JSON, and visa versa. Super useful for archivability and readability.
+Transform some structured plain text including Markdown and YAML into JSON, and visa versa. Super useful for archivability and readability. Feature parity with Kirby’s [file structure](https://getkirby.com/docs/content/adding-content).
 
 ```js
 var smarkt = require('smarkt')
@@ -28,7 +28,7 @@ var obj = smarkt.stringify({
 
 ## Structure
 
-A plain-text file is separated into fields delineated by four dashes. Feature parity with Kirby’s [file structure](https://getkirby.com/docs/content/adding-content).
+A plain-text file is separated into fields delineated by four dashes. 
 
 ```
 ----
