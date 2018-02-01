@@ -120,3 +120,4 @@ Sometimes it’s handy just to access a single method to reduce bundle size. To 
 
 - [ ] Tests
 - [ ] Expanded YAML support
+- [ ] `.stringify` Remove quotes around YAML array values
