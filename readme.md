@@ -14,15 +14,15 @@ title: Cyber Mysticism
 ----
 tags:
   - technopastoral
-  - dark-ux
+  - ambient
 ----
-text: The vectoralist class are the modern day dotcom corporate giants, the transnational turbo-capitalist regime, who own the means of production and thus monopolize abstractions.
+text: Art has always been a focusing device, the frame is a focusing device. What I’m trying to do is eliminate the frame, eliminate all those distractions and put you in direct relationship to the real experience and the real power: your ability to perceive.
 `)
 
 var obj = smarkt.stringify({
   title: 'Cyber Mysticism',
-  { tags: ['technopastoral', 'dark-ux' ]},
-  text: 'The vectoralist class are the modern day dotcom corporate giants, the transnational turbo-capitalist regime, who own the means of production and thus monopolize abstractions.'
+  { tags: ['technopastoral', 'ambient']},
+  text: 'Art has always been a focusing device, the frame is a focusing device. What I’m trying to do is eliminate the frame, eliminate all those distractions and put you in direct relationship to the real experience and the real power: your ability to perceive.'
 })
 ```
 
@@ -45,7 +45,7 @@ The value can also be YAML.
 ```
 tags:
   - technopastoral
-  - dark-ux
+  - ambient
 ```
 
 <details id="example-input">
