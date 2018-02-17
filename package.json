@@ -1,6 +1,6 @@
 {
   "name": "smarkt",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Hyper-readable plain text format",
   "main": "index.js",
   "scripts": {
