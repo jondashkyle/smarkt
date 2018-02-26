@@ -6,16 +6,18 @@ var exampleString = `title: Cyber Mysticism
 tags:
   - technopastoral
   - dark-ux
-
+----
+isMobileFriendly: true
 ----
 design:
   desktop:
     background: red
     navigation: false
+    styleUrl: desktop.css
   mobile:
     background: blue
     navigation: true
-
+    styleUrl: mobile.css
 ----
 text: We won the **battle** and lost the *war*.
 
@@ -29,14 +31,17 @@ It broke free from the commodity form.`
 var exampleObject = {
   title: 'Cyber Mysticism',
   tags: ['technopastoral', 'dark-ux'],
+  isMobileFriendly: true,
   design: {
     desktop: {
       background: 'red',
-      navigation: false
+      navigation: false,
+      styleUrl: 'desktop.css'
     },
     mobile: {
       background: 'blue',
-      navigation: true
+      navigation: true,
+      styleUrl: 'mobile.css'
     }
   },
   text: `We won the **battle** and lost the *war*.
