@@ -1,48 +1,63 @@
-var test = require('tape')
+var test = require('ava')
 var smarkt = require('.')
 
-var exampleString = `
-title: Cyber Mysticism
+var exampleString = `title: Cyber Mysticism
 ----
 tags:
   - technopastoral
   - dark-ux
 ----
+isMobileFriendly: true
+----
 design:
   desktop:
     background: red
     navigation: false
+    styleUrl: desktop.css
   mobile:
     background: blue
     navigation: true
+    styleUrl: mobile.css
 ----
-text:
+text: We won the **battle** and lost the *war*.
 
-We won the **battle** and lost the *war*. What Debord called détournement became not just an avant-garde but a popular cultural practice. As I wrote in [A Hacker Manifesto](https://en.wikipedia.org/wiki/A_Hacker_Manifesto): Information wants to be free but is everywhere in chains. It broke free from the commodity form.
-`
+What Debord called détournement became not just an avant-garde but a popular cultural practice.
+
+
+As I wrote in [A Hacker Manifesto](https://en.wikipedia.org/wiki/A_Hacker_Manifesto): Information wants to be free but is everywhere in chains.
+
+It broke free from the commodity form.`
 
 var exampleObject = {
   title: 'Cyber Mysticism',
   tags: ['technopastoral', 'dark-ux'],
+  isMobileFriendly: true,
   design: {
     desktop: {
       background: 'red',
-      navigation: false
+      navigation: false,
+      styleUrl: 'desktop.css'
     },
     mobile: {
       background: 'blue',
-      navigation: true
+      navigation: true,
+      styleUrl: 'mobile.css'
     }
   },
-  text: 'We won the **battle** and lost the *war*. What Debord called détournement became not just an avant-garde but a popular cultural practice. As I wrote in [A Hacker Manifesto](https://en.wikipedia.org/wiki/A_Hacker_Manifesto): Information wants to be free but is everywhere in chains. It broke free from the commodity form.'
+  text: `We won the **battle** and lost the *war*.
+
+What Debord called détournement became not just an avant-garde but a popular cultural practice.
+
+
+As I wrote in [A Hacker Manifesto](https://en.wikipedia.org/wiki/A_Hacker_Manifesto): Information wants to be free but is everywhere in chains.
+
+It broke free from the commodity form.`
 }
 
-test('string', function (t) {
-  t.ok(typeof smarkt.stringify(exampleObject) === 'string')
-  t.end()
+test('stringify', function (t) {
+  t.deepEqual(smarkt.stringify(exampleObject), exampleString)
 })
 
-test('string', function (t) {
-  t.ok(typeof smarkt.parse(exampleString) === 'object')
-  t.end()
+test('parse', function (t) {
+  t.deepEqual(smarkt.parse(exampleString), exampleObject)
 })
