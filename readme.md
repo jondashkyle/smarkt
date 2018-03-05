@@ -68,7 +68,7 @@ design:
 ----
 text:
 
-We won the **battle** and lost the *war*. What Debord called détournement became not just an avant-garde but a popular cultural practice. As I wrote in [A Hacker Manifesto](https://en.wikipedia.org/wiki/A_Hacker_Manifesto): Information wants to be free but is everywhere in chains. It broke free from the commodity form.
+Information wants to be free.
 ```
 
 </details>
@@ -91,7 +91,7 @@ We won the **battle** and lost the *war*. What Debord called détournement becam
       "navigation": true
     }
   },
-  "text": "We won the **battle** and lost the *war*. What Debord called détournement became not just an avant-garde but a popular cultural practice. As I wrote in [A Hacker Manifesto](https://en.wikipedia.org/wiki/A_Hacker_Manifesto): Information wants to be free but is everywhere in chains. It broke free from the commodity form."
+  "text": "Information wants to be free."
 }
 ```
 
@@ -114,10 +114,9 @@ var stringify = require('smarkt/stringify')
 var parse = require('smarkt/parse')
 ```
 
-Sometimes it’s handy just to access a single method to reduce bundle size. To do this, simple require the desired method name.
+Sometimes it’s handy just to access a single method to reduce bundle size. To do this, simply require the desired method by name.
 
 ## Todo
 
 - [ ] Tests
-- [ ] Expanded YAML support
 - [ ] `.stringify` Remove quotes around YAML array values
