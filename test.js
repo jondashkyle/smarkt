@@ -62,8 +62,9 @@ test('parse', function (t) {
   t.deepEqual(smarkt.parse(exampleString), exampleObject)
 })
 
-const emptiesInput = { null: null, undefined: undefined, emptyArray: [], emptyString: '', emptyObject: {} }
-const emptiesStringified = `null:
+var emptiesInput = { null: null, undefined: undefined, emptyArray: [], emptyString: '', emptyObject: {} }
+
+var emptiesStringified = `null:
 ----
 undefined:
 ----
@@ -72,7 +73,8 @@ emptyArray: []
 emptyString:
 ----
 emptyObject: {}`
-const emptiesParsed = { null: '', undefined: '', emptyArray: [], emptyString: '', emptyObject: {} }
+
+var emptiesParsed = { null: '', undefined: '', emptyArray: [], emptyString: '', emptyObject: {} }
 
 test('empties', function (t) {
   t.deepEqual(smarkt.stringify(emptiesInput), emptiesStringified)
